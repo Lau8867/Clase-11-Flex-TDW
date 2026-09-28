@@ -1,0 +1,170 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+{*margin 0;
+padding 0;
+box-sizing:border-box;
+Font-family: Roboto, Arial, Sans-serif;
+}
+
+body{
+    background-color:#f4f4f4;
+}
+
+.header{
+    display:flex;
+    /*--separar el logo del nav--*/
+    justify-content:space-between;
+    /*--centra verticalmente--*/
+    align-items: center;
+    background: #222222;
+    padding:15px 40px;
+    color: #F3F3F3;
+    font-size: 16px;
+    
+   }
+
+
+/*.logo{
+width: 80px;
+top:10px;
+height: 80px;
+left: 20px;
+font-size:24px;
+font-weight: 700;
+line-height: 100%;
+}*/
+
+.header.nav{
+    display:flex;
+    /*--espaciado entre enlaces--*/
+    color:#F3F3F3;
+    gap:20px;
+}
+
+.header.nav a{
+    color:#ffffff;
+    text-decoration:none;
+    display:inline-block;
+}
+
+/*--contenedor padre--*/
+
+.conteiner-padre{
+    display:flex;
+    /*--una ala lado de la otra horizontalmente--*/
+    flex-directiom:row;
+    /*--ancho total--*/
+    width:100%;
+    max-width: 986px;
+    /*--alineación en eje principal--*/
+    justify-content:space-between;
+    /*--separa una tarjeta a la izq y otra a la derecha--*/
+    /*align-items:center;*/
+    margin: 30 px auto;
+}
+
+.texto-uno{
+    color=#d0021b;
+    margin-bottom: 20px;
+    font-size:24px;
+    font-weight: bold;
+}
+
+.texto-dos{
+    color:white;
+    margin-bottom: 20px;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/*--Contenedor hijo izq--*/
+ .card-envío{
+    /*background-size:cover;*/
+    height: 350px;
+    width: 50%;
+    max-width: 490px;;
+    border-radius:5px;
+    display-flex;
+    justify-content:space-between;
+    /*padding-top:2%;*/
+   /*padding-Left:40px;*/
+   left: 19px;
+   top:135px;
+    flex-direction:column;
+    /*gap:5px;*/
+    box_shadow;0 4px 6px rgba(0,0,0,1);
+}
+
+/*--contenedor hijo derecha--*/
+ .card-podio{
+    /*--ancho total--*/
+    width: 50%;
+    max-width:491px;
+    object-fit: cover;
+    /*--altura fija según Figma--*/
+    height: 350px;
+    background-color:#ffffff;
+    /*padding:3%;*/
+    top:135px;
+    left:514px;
+    box-shadow:0 4px, 6px, rgba(0,0,0,0,1)
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    border: radius 5px;
+}
+
+.card-podio h2{
+    color:#d0021b;
+    text-align:center;
+    margin-bottom: 20px;
+    font-size:24px;
+    font-weight: bold;
+}
+
+.contenido-podio{
+    display:flex;
+    justify-content:space-between;
+    padding:40px;
+    width:100%;
+
+}
+
+.más_pedida{
+    padding-left:20px;
+}
+
+.imagen-trofeo{
+    max-width:92px;
+    height:129px;
+    top:267px;
+    left:839px;
+
+}
+
+.footer{
+    display:flex;
+    justify-content:space-between;
+    /*--link a la izq y logo a la der--*/
+    align-items:center;
+    background-color:#222222;
+    padding:25px 40px;
+    color:#ffffff;
+
+}
+
+.footer-links{
+    list-style:none; /*--Uso común: Ocultar los puntos de una lista con list-style: none; (muy útil al crear menús de navegación).--*/
+    display:flex;
+    flex-direction:column; /*--lista apilada verticalmente--*/
+    gap:8px;
+
+
+}
+
+.footer-links a{
+    color:#ffffff;
+    text-decoration:none; /*--es una propiedad de CSS que sirve para añadir, quitar o cambiar líneas decorativas en el texto--*/
+}
